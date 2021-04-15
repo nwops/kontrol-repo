@@ -1,0 +1,21 @@
+---
+acceptance:
+  type: git
+  remote: git@github.com:nwops/kontrol-repo.git
+  ref: acceptance
+development:
+  type: git
+  remote: git@github.com:nwops/kontrol-repo.git
+  ref: development
+hotfix:
+  type: git
+  remote: git@github.com:nwops/kontrol-repo.git
+  ref: hotfix
+production:
+  type: git
+  remote: git@github.com:nwops/kontrol-repo.git
+  ref: production
+qa:
+  type: git
+  remote: git@github.com:nwops/kontrol-repo.git
+  ref: qa

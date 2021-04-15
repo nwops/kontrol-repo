@@ -1,2 +1,18 @@
 ---
 message: "This node is using common data"
+puppet_enterprise::master::code_manager::sources:
+  puppet:
+    remote: 'N/A'
+    type: yaml
+    config: '/etc/puppetlabs/r10k/environments.yaml'
+  git:
+    remote: 'git@gitlab.com:nwops/kontrol-repo.git'
+    type: git
+    prefix: true  
+    ignore_branch_prefixes:
+      - 'main'
+  yaml_exec:
+    remote: 'N/A'
+    type: exec
+    prefix: true
+    command: 'curl -s https://raw.githubusercontent.com/nwops/kontrol-repo/feat_yamlr10k/environments.yaml' 
