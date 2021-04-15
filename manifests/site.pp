@@ -13,7 +13,6 @@
 # https://github.com/puppetlabs/docs-archive/blob/master/pe/2015.3/release_notes.markdown#filebucket-resource-no-longer-created-by-default
 File { backup => false }
 
-## Node Definitions ##
 
 # The default node definition matches any node lacking a more specific node
 # definition. If there are no other node definitions in this file, classes
