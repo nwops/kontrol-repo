@@ -3,10 +3,10 @@ message: "This node is using common data"
 puppet_enterprise::master::code_manager::sources:
  puppet:
    remote: 'N/A'
-   #type: exec
-   type: yaml
-   config: '/etc/puppetlabs/r10k/environments.yaml' 
-   #command: 'curl -s https://gitlab.com/usda/puppet-environments/raw/main/enviornments.yaml' 
+   type: exec
+   #type: yaml
+   #config: '/etc/puppetlabs/r10k/environments.yaml' 
+   command: 'curl https://raw.githubusercontent.com/logicminds/puppet-environments/main/environments.yaml -s' 
  
  git:
  # 1/1 environment/branch
