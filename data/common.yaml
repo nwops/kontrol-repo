@@ -10,7 +10,7 @@ puppet_enterprise::master::code_manager::sources:
  
  git:
  # 1/1 environment/branch
-   remote: 'git@gitlab.com:nwops/kontrol-repo.git'
+   remote: 'https://github.com/nwops/kontrol-repo.git'
    type: git
    prefix: false
    ignore_branch_prefixes:
