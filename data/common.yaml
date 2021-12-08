@@ -5,13 +5,13 @@ puppet_enterprise::master::code_manager::sources:
    remote: 'N/A'
    #type: exec
    type: yaml
-   config: '/etc/puppetlabs/r10k/environments_fas.yaml' 
+   config: '/etc/puppetlabs/r10k/environments.yaml' 
    #command: 'curl -s https://gitlab.com/usda/puppet-environments/raw/main/enviornments.yaml' 
  
  nrcs:
  # 1/1 environment/branch
-   remote: 'git@gitlab.com:nrcs/puppet-control-repo.git'
+   remote: 'git@gitlab.com:nwops/kontrol-repo.git'
    type: git
    prefix: false
    ignore_branch_prefixes:
-    - main
+     - main
