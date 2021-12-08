@@ -8,7 +8,7 @@ puppet_enterprise::master::code_manager::sources:
    config: '/etc/puppetlabs/r10k/environments.yaml' 
    #command: 'curl -s https://gitlab.com/usda/puppet-environments/raw/main/enviornments.yaml' 
  
- nrcs:
+ git:
  # 1/1 environment/branch
    remote: 'git@gitlab.com:nwops/kontrol-repo.git'
    type: git
