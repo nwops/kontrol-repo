@@ -6,7 +6,7 @@ puppet_enterprise::master::code_manager::sources:
    type: exec
    #type: yaml
    #config: '/etc/puppetlabs/r10k/environments.yaml' 
-   command: 'curl https://raw.githubusercontent.com/logicminds/puppet-environments/main/environments.yaml -s' 
+   command: '/etc/puppetlabs/r10k/r10k-environments.sh' 
  
  git:
  # 1/1 environment/branch
